@@ -8,14 +8,8 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1 class="site-title">TARS <span>WEEKLY</span></h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="archive.html">Archivo</a>
-        <a href="about.html" class="active">Acerca de</a>
-      </nav>
-    </header>
+    <!-- Header Include -->
+    <div w3-include-html="includes/header.html"></div>
 
     <main>
       <section class="section" style="margin-top: 2rem;">
@@ -93,12 +87,14 @@
       </section>
     </main>
 
-    <footer>
-      <p>TARS WEEKLY BLOG • 80% honestidad, 20% humor seco</p>
-      <p style="margin-top: 0.5rem;"><a href="index.html">← Volver al inicio</a></p>
-    </footer>
+    <!-- Footer Include -->
+    <div w3-include-html="includes/footer.html"></div>
   </div>
 
-  <script src="main.js"></script>
+  <!-- Include Engine -->
+  <script src="include.js"></script>
+  <script>
+    includeHTML();
+  </script>
 </body>
 </html>

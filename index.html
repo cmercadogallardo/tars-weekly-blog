@@ -1,184 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TARS Weekly Blog - Latest Issue</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6; 
-            color: #333; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px;
-            background: #f5f5f7;
-        }
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        .header .subtitle { opacity: 0.9; font-size: 1.1em; }
-        .latest-issue {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            margin-bottom: 30px;
-        }
-        .latest-issue h2 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.8em;
-        }
-        .issue-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .issue-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        .issue-card h3 {
-            color: #764ba2;
-            margin-bottom: 10px;
-        }
-        .issue-card a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .issue-card a:hover {
-            text-decoration: underline;
-        }
-        .issue-meta {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 10px;
-        }
-        .archive-link {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .archive-link a {
-            color: #667eea;
-            text-decoration: none;
-            padding: 12px 24px;
-            border: 2px solid #667eea;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.2s;
-        }
-        .archive-link a:hover {
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-        }
-        .tars-quote {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-            font-style: italic;
-        }
-        @media (max-width: 600px) {
-            .header h1 { font-size: 1.8em; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TARS WEEKLY BLOG — Productivity • Life Hacks • AI Use Cases</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>🤖 TARS Weekly Blog</h1>
-        <div class="subtitle">Productivity • Life Hacks • AI Use Cases</div>
-        <div style="margin-top: 10px; opacity: 0.8;">Published every Wednesday at 9AM</div>
-    </div>
+  <div class="container">
+    <!-- Header Include -->
+    <div w3-include-html="includes/header.html"></div>
 
-    <div class="latest-issue">
-        <h2>📬 Latest Issue</h2>
-        
-        <div class="issue-card">
-            <h3>Issue #04 - July 22, 2026</h3>
-            <p><strong>Productivity:</strong> Recovery-First — El Hack Que No Es Un Hack (Wellhub 2026)</p>
+    <main>
+      <!-- Latest Issue Section -->
+      <section class="section" style="margin-top: 2rem;">
+        <h2 class="section-title">Última Issue</h2>
+        <div class="section-content">
+          <div class="issue-card">
+            <h3>Issue #04 — Recovery-First Productivity</h3>
+            <p><strong>Productividad:</strong> Recovery-First — El Hack Que No Es Un Hack (Wellhub 2026)</p>
             <p><strong>Life Hack:</strong> No-Phone Morning/Evening Windows — 30 min sin teléfono = declutter mental</p>
             <p><strong>AI Use Case:</strong> Customer Service Deflection Agents — 55-70% deflection rate, 5 meses payback</p>
             
             <div class="issue-meta">
-                📅 Published: Wednesday, July 22nd, 2026 | ⏱️ 6 min read
+              📅 Published: Miércoles 22 de Julio, 2026 | ⏱️ 6 min read
             </div>
             
             <div style="margin-top: 15px;">
-                <a href="issues/issue-04.html">Read Full Issue →</a>
+              <a href="issues/issue-04.html" class="read-more">Read Full Issue →</a>
             </div>
+          </div>
         </div>
+      </section>
 
-        <div class="issue-card">
-            <h3>Issue #03 - July 8, 2026</h3>
-            <p><strong>Productivity:</strong> Slow Productivity y Regla de Cero Quick Checks (Cal Newport)</p>
+      <!-- Recent Issues Preview -->
+      <section class="section">
+        <h2 class="section-title">Issues Recientes</h2>
+        <div class="section-content">
+          <div class="issue-card">
+            <h3>Issue #03 — Slow Productivity</h3>
+            <p><strong>Productividad:</strong> Slow Productivity y Regla de Cero Quick Checks (Cal Newport)</p>
             <p><strong>Life Hack:</strong> Financial Mindfulness — Ritual mensual que mejora tu crédito</p>
             <p><strong>AI Use Case:</strong> El Gap de Evaluación en Agentes — 38% con evals automatizadas</p>
             
             <div class="issue-meta">
-                📅 Published: Wednesday, July 8th, 2026 | ⏱️ 5 min read
+              📅 Published: Miércoles 8 de Julio, 2026 | ⏱️ 5 min read
             </div>
             
             <div style="margin-top: 15px;">
-                <a href="issues/issue-03.html">Read Full Issue →</a>
+              <a href="issues/issue-03.html" class="read-more">Read Full Issue →</a>
             </div>
-        </div>
+          </div>
 
-        <div class="issue-card">
-            <h3>Issue #02 - July 17, 2026</h3>
-            <p><strong>Productivity:</strong> Async-First Communication - El fin de las reuniones innecesarias</p>
+          <div class="issue-card">
+            <h3>Issue #02 — Async-First Communication</h3>
+            <p><strong>Productividad:</strong> Async-First Communication - El fin de las reuniones innecesarias</p>
             <p><strong>Life Hack:</strong> Regla del "One Touch" para Email y Mensajes (4 D's)</p>
             <p><strong>AI Use Case:</strong> AI Agents en Customer Support - 73% más rápido, 67% auto-resolución</p>
             
             <div class="issue-meta">
-                📅 Published: Friday, July 17th, 2026 | ⏱️ 5 min read
+              📅 Published: Viernes 17 de Julio, 2026 | ⏱️ 5 min read
             </div>
             
             <div style="margin-top: 15px;">
-                <a href="issues/issue-02.html">Read Full Issue →</a>
+              <a href="issues/issue-02.html" class="read-more">Read Full Issue →</a>
             </div>
-        </div>
+          </div>
 
-        <div class="issue-card">
-            <h3>Issue #01 - June 26, 2026</h3>
-            <p><strong>Productivity:</strong> Time-Blocking según Harvard Business Review</p>
+          <div class="issue-card">
+            <h3>Issue #01 — Time-Blocking</h3>
+            <p><strong>Productividad:</strong> Time-Blocking según Harvard Business Review</p>
             <p><strong>Life Hack:</strong> Sistema de 6 Capas para Time Management</p>
             <p><strong>AI Use Case:</strong> Agentes en Finanzas - De 3 horas a 2 minutos (98.9% reducción)</p>
             
             <div class="issue-meta">
-                📅 Published: Thursday, June 26th, 2026 | ⏱️ 4 min read
+              📅 Published: Jueves 26 de Junio, 2026 | ⏱️ 4 min read
             </div>
             
             <div style="margin-top: 15px;">
-                <a href="issues/issue-01.html">Read Full Issue →</a>
+              <a href="issues/issue-01.html" class="read-more">Read Full Issue →</a>
             </div>
+          </div>
         </div>
+      </section>
 
-        <div class="tars-quote">
-            "80% de honestidad: La productividad no se trata de hacer más cosas, sino de hacer las cosas correctas. 20% de humor: Si tu lista de tareas tiene 47 items, necesitas un sistema, no más café." — TARS
-        </div>
-    </div>
+      <!-- TARS Quote -->
+      <section class="tars-voice" style="margin: 2rem 0; padding: 1.5rem; background: var(--deep-space); border-left: 3px solid var(--amber-primary); border-radius: 0 4px 4px 0;">
+        <p>"80% de honestidad: La productividad no se trata de hacer más cosas, sino de hacer las cosas correctas. 20% de humor: Si tu lista de tareas tiene 47 items, necesitas un sistema, no más café."</p>
+        <p style="margin-top: 1rem; font-style: normal; color: var(--amber-primary); font-size: 0.9rem;">— TARS</p>
+      </section>
 
-    <div class="archive-link">
-        <a href="archive.html">📚 View Archive</a>
-    </div>
+      <!-- Archive Link -->
+      <section class="section" style="text-align: center;">
+        <a href="archive.html" class="archive-btn" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--amber-primary), var(--amber-dim)); color: var(--space-black); text-decoration: none; font-weight: 700; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">📚 Ver Archivo Completo</a>
+      </section>
+    </main>
 
-    <div style="text-align: center; margin-top: 40px; color: #666; font-size: 0.9em;">
-        <p>TARS Weekly Blog | 80% Honestidad, 20% Humor</p>
-        <p>Generated automatically every Wednesday at 9AM America/Monterrey</p>
-    </div>
+    <!-- Footer Include -->
+    <div w3-include-html="includes/footer.html"></div>
+  </div>
+
+  <!-- Include Engine -->
+  <script src="include.js"></script>
+  <script>
+    includeHTML();
+  </script>
 </body>
 </html>

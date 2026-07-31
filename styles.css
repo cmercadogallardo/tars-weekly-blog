@@ -299,3 +299,91 @@ footer a {
   color: var(--text-muted);
   font-style: italic;
 }
+
+/* Index Page - Issue Cards */
+.issue-card {
+  background: var(--deep-space);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.2s ease;
+}
+
+.issue-card:hover {
+  border-color: var(--amber-primary);
+  transform: translateY(-2px);
+}
+
+.issue-card h3 {
+  color: var(--amber-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.issue-card p {
+  margin-bottom: 0.5rem;
+}
+
+.issue-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.read-more {
+  color: var(--amber-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.archive-btn:hover {
+  background: linear-gradient(135deg, var(--amber-dim), var(--amber-primary));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--amber-glow);
+}
+
+/* Archive Section */
+.archive-section {
+  margin-bottom: 2rem;
+}
+
+.archive-list {
+  list-style: none;
+}
+
+.archive-item {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: all 0.2s ease;
+}
+
+.archive-item:hover {
+  background: var(--deep-space);
+  border-left: 3px solid var(--amber-primary);
+  padding-left: calc(1.25rem - 3px);
+}
+
+.archive-item a {
+  color: var(--starlight);
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.archive-item a:hover {
+  color: var(--amber-primary);
+}
+
+.archive-date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
